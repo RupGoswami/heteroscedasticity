@@ -1,12 +1,12 @@
-exam=read.csv("D:/ISI Tezpur/Class/Class Notes/Module After Mid_1st Sem/Regression/Exam/exam.csv")
+Data=read.csv("Path_name.csv")
 
-df=as.data.frame(exam)
+df=as.data.frame(Data)
 
 View(df)
 
 colnames(df)
 
-Subset_exam=subset(df,select = c("work.hour..daily."))
+Subset_Data=subset(df,select = c("work.hour..daily."))
 
 unitary=c()
 for (i in 1:32)
@@ -97,7 +97,7 @@ F_Stats=((RRSS-URSS)*(n-4))/(3*URSS)
 
 #F tabulated 2.95
 
-#CONCLUSION: WE CANNOT REJECT NULL HYPOTHESIS.THAT IS THERE IS NO HETEROSKEDASTICITY
+#CONCLUSION: WE CANNOT REJECT NULL HYPOTHESIS. THAT IS THERE IS NO HETEROSKEDASTICITY
 #THAT IS THE MODEL WE STARTED WITH IS CORRECTLY SPECIFIED.
 
 
